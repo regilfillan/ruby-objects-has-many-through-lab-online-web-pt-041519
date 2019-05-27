@@ -20,7 +20,7 @@ class Doctor
   end
   
   def patients
-    appointments.map(&:patient)
+    Appointment.all.collect {|appointment| appointment.patient}
   end
   
 end
