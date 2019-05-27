@@ -20,7 +20,7 @@ class Patient
   end
   
   def doctors
-    self.appointments.
+    self.appointments.select {|appointment| appointment.
   end
   
 end
